@@ -1,4 +1,4 @@
-## A One system 添加 BlueCoean 支付方式
+## A One system 添加 BlueOcean 支付方式
 
 ***
 A One System 可能会不定期更新，在更新之后，第三方添加的支付方式可能会失效，变得不可用。在系统更新之后，再参考以下步骤，恢复代码即可。
