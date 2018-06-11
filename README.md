@@ -8,29 +8,29 @@ A One System 可能会不定期更新，在更新之后，第三方添加的支�
 
 ### 后台：
 
-1. 新增
-<br />
-`/weixinpl/Base/pay_set/blueoceanpay_set.php` 　      支付方式配置表单文件。配置合适的 head 值（顺序排列），不能与其它支付方式有冲突，此为 `Tab` 菜单切换之用。
-`/weixinpl/Base/pay_set/save_blueoceanpay_set.php`　处理保存支付配置信息到数据库。
-`/weixinpl/Base/common/images/pay_set/blueoceanpay_128.png`　支付方式默认图标。
+#### 新增
 
-2. 修改
-<br />
-`/weixinpl/Base/pay_set/pay_type_config.php`　　 添加支付方式类型配置
-`/weixinpl/Base/pay_set/pay_config.class.php`　　 添加从数据库获取支付配置方法。
-`/weixinpl/Base/pay_set/pay_head.php`　                添加支付配置菜链接（ tab 选项卡）
-`/weixin/plat/app/Tpl/IndexV2/managerV2.html`    　修改菜单为，默认首选打开支付方式（可选）
+- `/weixinpl/Base/pay_set/blueoceanpay_set.php` 　      支付方式配置表单文件。配置合适的 head 值（顺序排列），不能与其它支付方式有冲突，此为 `Tab` 菜单切换之用。
+- `/weixinpl/Base/pay_set/save_blueoceanpay_set.php`　处理保存支付配置信息到数据库。
+- `/weixinpl/Base/common/images/pay_set/blueoceanpay_128.png`　支付方式默认图标。
+
+#### 修改
+
+- `/weixinpl/Base/pay_set/pay_type_config.php`　　 添加支付方式类型配置
+- `/weixinpl/Base/pay_set/pay_config.class.php`　　添加从数据库获取支付配置方法。
+- `/weixinpl/Base/pay_set/pay_head.php`　  添加支付配置菜链接（ tab 选项卡）
+- `/weixin/plat/app/Tpl/IndexV2/managerV2.html`   修改菜单为，默认首选打开支付方式（可选）
 
 ### 前台：
 
-1. 新增
-<br/>
-`/weixinpl/mshop/blueoceanpay/blueoceanpay.php`    调起支付，完成支付动作。
-`/weixinpl/mshop/blueoceanpay/blueoceanpay_notify.php`   支付成功通知，修改订单状态为已支付。
+#### 新增
 
-2. 修改
-<br />
-`/weixinpl/mshop/choose_paytype.php`     修改 `StartPay`  js 方法，添加相关支付方式分支选择。
+- `/weixinpl/mshop/blueoceanpay/blueoceanpay.php`    调起支付，完成支付动作。
+- `/weixinpl/mshop/blueoceanpay/blueoceanpay_notify.php`   支付成功通知，修改订单状态为已支付。
+
+#### 修改
+
+- `/weixinpl/mshop/choose_paytype.php`  修改 `StartPay`  js 方法，添加相关支付方式分支选择。
 
 
 完成支付方式添加！
